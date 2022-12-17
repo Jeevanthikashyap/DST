@@ -63,6 +63,7 @@ return first;
 NODE insert_pos(NODE first, int item, int pos)
 {
     int count=1;
+    int value=item;
     NODE new, current,prev;
     new=getnode();
     new->value=item;
@@ -88,7 +89,7 @@ NODE insert_pos(NODE first, int item, int pos)
     }
     if(first!=NULL && pos==1)
     {
-        first=insert_at_begin(first, item);
+        first=insert_at_begin(first, value);
         return first;
     }
     }
