@@ -68,6 +68,7 @@ NODE insert_pos(NODE first, int item, int pos)
     new=getnode();
     new->value=item;
     new->next=NULL;
+    current=first;
     if(first==NULL && pos==1)
     return new;
     while(count!=pos && current!=NULL)
